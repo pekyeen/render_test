@@ -18,7 +18,7 @@ display = dmc.Tabs(
     [
         dmc.Tooltip(
             dmc.Avatar("PW", color="cyan", radius="xl"),
-            label="何碧薇医师",
+            label="XXX医师",
             position="top"
         ),
         dmc.TabsList(
@@ -47,22 +47,7 @@ display2 = html.Div([
     display
 
 ])
-# display3 = dmc.Group(
-#     children=[
-#         dmc.Avatar(
-#             src="https://avatars.githubusercontent.com/u/91216500?v=4", radius="xl"
-#         ),
-#         dmc.Avatar(
-#             src="ollama_logo.png", radius="x1"
-#         ),
-#         # default placeholder
-#         dmc.Avatar(radius="xl"),
-#         # initials
-#         dmc.Avatar("MK", color="cyan", radius="xl"),
-#         # icon
-#         dmc.Avatar(DashIconify(icon="radix-icons:star"), color="blue", radius="xl"),
-#     ],
-# )
+
 
 maindisplay = dmc.AppShell(
     [
@@ -75,21 +60,12 @@ maindisplay = dmc.AppShell(
     header={"height": 70},
     padding="xl",
     zIndex=1400,
-    # navbar={
-    #     "width": 150,
-    #     "breakpoint": "sm",
-    #     "collapsed": {"mobile": True},
-    # },
     footer={"height":20},
-    # aside={
-    #     "width": 300,
-    #     "breakpoint": "xl",
-    #     "collapsed": {"desktop": False, "mobile": True},
-    # },
+
 )
 
 app.layout = dmc.MantineProvider(maindisplay)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
