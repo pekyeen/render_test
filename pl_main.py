@@ -13,6 +13,7 @@ from dash_iconify import DashIconify
 _dash_renderer._set_react_version("18.2.0")
 
 app = Dash(external_stylesheets=dmc.styles.ALL)
+server = app.server
 
 display = dmc.Tabs(
     [
