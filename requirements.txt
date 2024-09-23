@@ -1,4 +1,4 @@
-dash
-dash_mantine_components
-dash_iconify
+dash==2.17.0
+dash_mantine_components==0.14.4
+dash_iconify==0.1.2
 gunicorn
